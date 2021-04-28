@@ -1,0 +1,31 @@
+<<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    This is HomePage
+
+    <form action="{% url 'result' %}" >
+
+      {% csrf_token %}
+
+      Age: <input type="text" required name="age" > <br> <br>
+      Sex (0 for male else 1): <input type="text" required name="sex" > <br> <br>
+      chest pain type (4 values) : <input type="text" required name="cp" > <br> <br>
+      resting blood pressure :<input type="text" required name="trestbps" > <br> <br>
+      serum cholestoral in mg/dl :<input type="text" required name="chol" > <br> <br>
+      fasting blood sugar > 120 mg/dl :<input type="text" required name="fbs" > <br> <br>
+      resting electrocardiographic results (values 0,1,2) :<input type="text" required name="restecg" > <br> <br>
+      maximum heart rate achieved :<input type="text" required name="thalach" > <br> <br>
+      exercise induced angina :<input type="text" required name="exang" > <br> <br>
+      oldpeak = ST depression induced by exercise relative to rest :<input type="text" required name="oldpeak" > <br> <br>
+      the slope of the peak exercise ST segment :<input type="text" required name="slope" > <br> <br>
+      number of major vessels (0-3) colored by flourosopy :<input type="text" required name="ca" > <br> <br>
+      thal: 3 = normal; 6 = fixed defect; 7 = reversable defect :<input type="text" required name="thal" > <br> <br>
+
+      <input type="submit" name="" value="submit">
+
+  </body>
+</html>
